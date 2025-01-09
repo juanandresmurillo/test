@@ -6,7 +6,7 @@ DATA_FILE = "data/records.json"
 def load_data():
     if not os.path.exists(DATA_FILE):
         return []
-    with open(DATA_FILE, 'r') as file:
+    with open(DATA_FILE, 'r') as f
         return json.load(file)
 
 def save_data(data):
